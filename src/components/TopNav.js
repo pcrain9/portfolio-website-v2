@@ -62,7 +62,7 @@ function TopNav() {
             sx={{ color: "#ffea00" }}
             component={Link}
             underline="hover"
-            href="https://drive.google.com/file/d/1REeJmF9hfmM9JmlAxRm_LlsLxkgRvGl0/view?usp=sharing"
+            href="https://drive.google.com/file/d/1QeEB7l3W1PkH7rD4P_b5yCDnXslZVBaT/view?usp=sharing"
           >
             Resume
           </Typography>
