@@ -42,10 +42,11 @@ function Projects() {
               component={Card}
               marginBottom={2}
               marginTop={2}
+              padding={2}
               direction={matches ? "column" : "row"}
             >
-              <Grid item container xs={4}>
-                <Grid item xs={12} padding={2}>
+              <Grid item container xs={4} padding={3}>
+                <Grid item xs={12}>
                   <Typography variant="h6" sx={{ fontWeight: "600" }}>
                     {project.title}
                   </Typography>
@@ -64,7 +65,7 @@ function Projects() {
                     <img
                       src={images[index]}
                       alt="null"
-                      style={{ marginBottom: "10px" }}
+                      style={{ marginBottom: "10px", boxShadow:"rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
                     />
                     <Box
                       sx={{

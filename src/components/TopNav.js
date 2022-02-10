@@ -107,7 +107,7 @@ function TopNav() {
           <FmdGoodIcon sx={{ color: "#ffea00", mb: "10px" }} /> Austin, TX
         </Typography>
         <Box
-          sx={{ display: "flex", width: "20%", justifyContent: "space-evenly" }}
+          sx={{ display: "flex", width: matches ? "40%" : "20%", justifyContent: "space-evenly" }}
         >
           <a href="https://www.github.com/pcrain9">
             <img
