@@ -92,19 +92,19 @@ function TopNav() {
           flexDirection: "column",
         }}
       >
-        <Typography variant="h5" sx={{ color: "#ffea00", mb: "5px" }}>
+        <Typography variant="h5" sx={{ color: "#ffea00", mb: "10px" }}>
           Full Stack Web Developer
         </Typography>
         <Typography
           paragraph
           sx={{
             color: "#ffea00",
-            mb: "5px",
+            mb: "10px",
             display: "flex",
             alignItems: "center",
           }}
         >
-          <FmdGoodIcon sx={{ color: "#ffea00", mb: "5px" }} /> Austin, TX
+          <FmdGoodIcon sx={{ color: "#ffea00", mb: "10px" }} /> Austin, TX
         </Typography>
         <Box
           sx={{ display: "flex", width: "20%", justifyContent: "space-evenly" }}
@@ -113,14 +113,14 @@ function TopNav() {
             <img
               src={Github}
               alt="null"
-              style={{ height: "25px", width: "25px", borderRadius: "2px" }}
+              style={{ height: "40px", width: "40px", borderRadius: "2px" }}
             />
           </a>
           <a href="https://www.linkedin.com/in/perrycrain9">
             <img
               src={Linkedin}
               alt="null"
-              style={{ height: "25px", width: "25px" }}
+              style={{ height: "40px", width: "40px" }}
             />
           </a>
         </Box>

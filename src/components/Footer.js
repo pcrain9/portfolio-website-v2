@@ -5,13 +5,11 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { scroller } from "react-scroll";
 
 import CopyrightIcon from "@mui/icons-material/Copyright";
 
 function Footer() {
-  const matches = useMediaQuery("(max-width:1000px)");
 
   function scrollTo() {
     scroller.scrollTo("projects", {

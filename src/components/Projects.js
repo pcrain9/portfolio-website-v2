@@ -44,7 +44,7 @@ function Projects() {
               marginTop={2}
               direction={matches ? "column" : "row"}
             >
-              <Grid item container xs={6}>
+              <Grid item container xs={4}>
                 <Grid item xs={12} padding={2}>
                   <Typography variant="h6" sx={{ fontWeight: "600" }}>
                     {project.title}
@@ -104,7 +104,7 @@ function Projects() {
                   </List>
                 </Grid>
               </Grid>
-              <Grid item container xs={6} spacing={3} padding={2}>
+              <Grid item container xs={8} spacing={3} padding={2}>
                 <Grid item xs={12}>
                   <Typography variant="h6">My role</Typography>
                   <Typography paragraph>{project.role}</Typography>
