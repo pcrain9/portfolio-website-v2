@@ -1,13 +1,18 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Avatar from "@mui/material/Avatar";
 
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import BackgroundPic from "../data/austin-dark.jpg";
 import Linkedin from "../data/linkedin.png";
 import Github from "../data/github.png";
+import pcAvatar from "../data/pc-photo.jpg";
+
+import AboutMenu from "./AboutMenu";
 
 function TopNav() {
   const matches = useMediaQuery("(max-width:1000px)");
@@ -32,53 +37,31 @@ function TopNav() {
         src={BackgroundPic}
         alt="null"
       />
-      <Box
-        sx={{
-          position: "absolute",
-          zIndex: "2002",
-          display: "flex",
-          justifyContent: "space-evenly",
-          width: "100%",
-          mt: "5px",
-          height: "10vh",
-        }}
-      >
-        <Typography
-          paragraph
-          sx={{
-            color: "#ffea00",
-            width: "50%",
-            display: "flex",
-            justifyContent: "center",
-          }}
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar
+          position="absolute"
+          sx={{ zIndex: "2010", backgroundColor: "transparent", mt: "0px" }}
         >
-          Perry Crain
-        </Typography>
-        <Box
-          sx={{ display: "flex", width: "50%", justifyContent: "space-evenly" }}
-        >
-          <Typography
-            paragraph
-            sx={{ color: "#ffea00" }}
-            component={Link}
-            underline="hover"
-            href="https://drive.google.com/file/d/1QeEB7l3W1PkH7rD4P_b5yCDnXslZVBaT/view?usp=sharing"
-          >
-            Resume
-          </Typography>
-
-          <Typography
-            paragraph
-            sx={{ color: "#ffea00" }}
-            component={Link}
-            underline="hover"
-            href="mailto:pcrain9@gmail.com"
+          <Toolbar sx={{ width:matches ? "50%" : "20%", height:"50px", display:"flex", justifyContent:"space-evenly", alignItems:"center"}}>
             
-          >
-            Contact
-          </Typography>
-        </Box>
+              <AboutMenu />
+              <Avatar alt="Perry Crain" src={pcAvatar} sx={{position:"relative", zIndex:"3000"}} />
+            <Typography
+              paragraph
+              sx={{
+                color: "#ffea00",
+                mt:"10px"
+              }}
+            >
+              Perry Crain
+            </Typography>
+          </Toolbar>
+        </AppBar>
       </Box>
+
+      
+
+      
       <Box
         sx={{
           position: "absolute",
@@ -88,7 +71,6 @@ function TopNav() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "rgba(0, 0, 0, .5)",
           flexDirection: "column",
         }}
       >
@@ -107,7 +89,11 @@ function TopNav() {
           <FmdGoodIcon sx={{ color: "#ffea00", mb: "10px" }} /> Austin, TX
         </Typography>
         <Box
-          sx={{ display: "flex", width: matches ? "40%" : "20%", justifyContent: "space-evenly" }}
+          sx={{
+            display: "flex",
+            width: matches ? "40%" : "20%",
+            justifyContent: "space-evenly",
+          }}
         >
           <a href="https://www.github.com/pcrain9">
             <img

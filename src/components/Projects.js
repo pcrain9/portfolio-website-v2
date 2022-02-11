@@ -44,6 +44,7 @@ function Projects() {
               marginTop={2}
               padding={2}
               direction={matches ? "column" : "row"}
+              key={index}
             >
               <Grid item container xs={4} padding={3}>
                 <Grid item xs={12}>
@@ -92,9 +93,9 @@ function Projects() {
                     Frameworks and languages used
                   </Typography>
                   <List>
-                    {project.framesandlangs.map((frame) => {
+                    {project.framesandlangs.map((frame, index) => {
                       return (
-                        <ListItem component={Typography} paragraph>
+                        <ListItem key={index} component={Typography} paragraph>
                           <ListItemIcon>
                             <RadioButtonCheckedIcon fontSize="small" />
                           </ListItemIcon>
@@ -124,9 +125,9 @@ function Projects() {
                 <Grid item xs={12}>
                   <Typography variant="h6">Notable features:</Typography>
                   <List>
-                    {project.features.map((feature) => {
+                    {project.features.map((feature, index) => {
                       return (
-                        <ListItem component={Typography} paragraph>
+                        <ListItem key={index} component={Typography} paragraph>
                           <ListItemIcon>
                             <RadioButtonCheckedIcon fontSize="small" />
                           </ListItemIcon>
