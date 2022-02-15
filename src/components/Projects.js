@@ -22,6 +22,7 @@ function Projects() {
   const images = [dlPreviewImage, weatherPreviewImage, foodPreviewImage];
   const matches = useMediaQuery("(max-width:1000px)");
 
+  const padding = matches ? 0 : 3
   return (
     <Grid
       container
@@ -46,9 +47,9 @@ function Projects() {
               direction={matches ? "column" : "row"}
               key={index}
             >
-              <Grid item container xs={4} padding={3}>
+              <Grid item container xs={4} padding={padding}>
                 <Grid item xs={12}>
-                  <Typography variant="h6" sx={{ fontWeight: "600" }}>
+                  <Typography variant="h6" sx={{ fontWeight: "600", ml: matches ? "10px" : "0px" }}>
                     {project.title}
                   </Typography>
                 </Grid>
