@@ -16,10 +16,10 @@ import Symbols from "./Symbols";
 import projectData from "../data/project-data.js";
 import dlPreviewImage from "../data/basecamp-image.png";
 import weatherPreviewImage from "../data/weather-image.png";
-import foodPreviewImage from "../data/order-image.png";
+import metaDataParserImage from "../data/metadata-parser.png";
 
 function Projects() {
-  const images = [dlPreviewImage, weatherPreviewImage, foodPreviewImage];
+  const images = [dlPreviewImage, metaDataParserImage, weatherPreviewImage];
   const matches = useMediaQuery("(max-width:1000px)");
 
   const padding = matches ? 0 : 3
