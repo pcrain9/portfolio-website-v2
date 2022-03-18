@@ -91,7 +91,7 @@ function AboutMenu() {
                     <Link
                       sx={{ color: "black" }}
                       underline="none"
-                      href="https://drive.google.com/file/d/1QeEB7l3W1PkH7rD4P_b5yCDnXslZVBaT/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1FcyCdhYFe2uXFjGpvjoVL5BF40qz7S0Y/view?usp=sharing"
                     >
                       Resume
                     </Link>
@@ -106,8 +106,31 @@ function AboutMenu() {
                     </Link>
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <Link sx={{ color: "black" }} underline="none" onClick={scrollTo}>Projects</Link>
-                    
+                    <Link
+                      sx={{ color: "black" }}
+                      underline="none"
+                      onClick={scrollTo}
+                    >
+                      Projects
+                    </Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link
+                      sx={{ color: "black" }}
+                      underline="none"
+                      href="https://www.linkedin.com/in/perrycrain9/"
+                    >
+                      Linkedin
+                    </Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link
+                      sx={{ color: "black" }}
+                      underline="none"
+                      href="https://www.github.com/pcrain9"
+                    >
+                      Github
+                    </Link>
                   </MenuItem>
                 </MenuList>
               </ClickAwayListener>

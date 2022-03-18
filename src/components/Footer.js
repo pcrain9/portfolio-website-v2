@@ -26,7 +26,7 @@ function Footer() {
             <Box
               sx={{
                 width: "100%",
-                height: "40vh",
+                height: "30vh",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -35,17 +35,17 @@ function Footer() {
             >
               <div
                 style={{
-                  height: "150px",
-                  width: "150px",
+                  height: "100px",
+                  width: "100px",
                   borderRadius: "50%",
                   backgroundColor: "white",
                   marginBottom: "5px",
                 }}
               >
                 <Typography
-                  variant="h2"
+                  variant="h4"
                   color="#26a69a"
-                  sx={{ padding: "35px" }}
+                  sx={{ padding: "30px" }}
                 >
                   PC
                 </Typography>
@@ -95,9 +95,17 @@ function Footer() {
               paragraph
               component={Link}
               underline="hover"
-              href="https://drive.google.com/file/d/1QeEB7l3W1PkH7rD4P_b5yCDnXslZVBaT/view?usp=sharing"
+              href="https://drive.google.com/file/d/1FcyCdhYFe2uXFjGpvjoVL5BF40qz7S0Y/view?usp=sharing"
             >
               resume
+            </Typography>
+            <Typography
+              paragraph
+              component={Link}
+              underline="hover"
+              href="https://www.linkedin.com/in/perrycrain9/"
+            >
+              linkedin
             </Typography>
             <Typography
               paragraph
