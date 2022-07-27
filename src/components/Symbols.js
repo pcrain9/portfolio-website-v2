@@ -9,6 +9,7 @@ import htmlImage from "../data/html.png";
 import cssImage from "../data/css.png";
 import formikImage from "../data/formik.png";
 import jsImage from "../data/javascript.png";
+import reduxImage from "../data/redux-logo.png";
 
 const imgStyle = { height: "30px", width: "30px" };
 const containerStyle = {
@@ -28,6 +29,7 @@ function Symbols() {
           <img src={muiImage} alt="null" style={imgStyle} />
           {<img src={nodeImage} alt="null" style={{ height:"50px", width:"50px"}} />}
           <img src={typescriptImage} alt="null" style={imgStyle} />
+          <img src={reduxImage} alt="null" style={imgStyle} />
           <img src={formikImage} alt="null" style={imgStyle} />
       </Box>
     </>
